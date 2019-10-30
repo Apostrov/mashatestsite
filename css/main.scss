@@ -34,7 +34,7 @@
 // }
 
 // variables.less
-$theme-primary: #F05F40;
+$theme-primary: #bd4ab3;
 $theme-dark: #000000;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -43,9 +43,41 @@ $theme-dark: #000000;
         "base"
 ;
 
-.badge {
+.inner-google-badge {
         position: absolute;
-        margin-top: 50%;
-        margin-left: 50%;
-        transform: translate(-50%,-50%);
-    }
+        width:20%;
+        bottom:0;
+        right:20%;
+}
+
+.inner-apple-badge {
+        position: absolute;
+        width:17%;
+        bottom:2%;
+        right:2%;
+}
+
+.game-div {
+        position: relative;
+}
+
+.hv-button {
+        @include sans-serif-font;
+        color: $theme-primary !important;
+        text-transform: uppercase;
+        background: $theme-dark;
+        padding: 20px;
+        border: 4px solid $theme-primary !important;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+}
+
+.hv-button:hover {
+        color: #fff !important;
+        border-radius: 50px;
+        border-color: #fff !important;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+}
