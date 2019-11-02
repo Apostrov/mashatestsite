@@ -20,11 +20,7 @@ hr.light {
 
 a {
     @include transition-all;
-    color: $theme-primary;
-    &:hover,
-    &:focus {
-        color: darken($theme-primary, 10%);
-    }
+    color: white;
 }
 
 h1,
@@ -155,7 +151,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/promoart.png');
     text-align: center;
     color: white;
     .header-content {

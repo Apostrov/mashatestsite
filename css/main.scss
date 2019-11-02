@@ -34,8 +34,8 @@
 // }
 
 // variables.less
-$theme-primary: #bd4ab3;
-$theme-dark: #000000;
+$theme-primary: #F200FF;
+$theme-dark: black;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -45,19 +45,19 @@ $theme-dark: #000000;
 
 .inner-google-badge {
         position: absolute;
-        width:20%;
-        bottom:0;
-        right:20%;
+        width: 20%;
+        bottom: 0;
+        right: 20%;
 }
 
 .inner-apple-badge {
         position: absolute;
-        width:17%;
-        bottom:2%;
-        right:2%;
+        width: 17%;
+        bottom: 2%;
+        right: 2%;
 }
 
-.game-div {
+.div-relative {
         position: relative;
 }
 
@@ -75,9 +75,66 @@ $theme-dark: #000000;
 }
 
 .hv-button:hover {
-        color: #fff !important;
+        color: white !important;
         border-radius: 50px;
-        border-color: #fff !important;
+        border-color: white !important;
         transition: all 0.3s ease 0s;
         text-decoration: none;
+}
+
+.img-center {
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.img-fill {
+        object-fit: cover;
+        width: 100%;
+}
+
+.arrow {
+        box-sizing: border-box;
+        height: 5vw;
+        width: 5vw;
+        border-style: solid;
+        border-color: white;
+        border-width: 0px 1px 1px 0px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+        border-bottom-width: 4px;
+        border-right-width: 4px;
+}
+
+.arrow.inside {
+        position: absolute;
+        bottom: 10%;
+        right: 48.5%;
+}
+
+.arrow.up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        bottom: 3%;
+        border-color: $theme-primary;
+}
+
+.news-text {
+        position: absolute;
+        bottom: 20%;
+        left: 25%;
+        right: 25%;
+}
+
+.contact-container {
+        width: 100%;
+        height: 5%;
+}
+
+.footer {
+        padding: 0 0;
+        vertical-align: top;
 }
