@@ -43,6 +43,15 @@ $theme-dark: black;
         "base"
 ;
 
+html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+}
+
+.nav-logo {
+        max-height: 14vmin;
+}
+
 .inner-google-badge {
         position: absolute;
         width: 20%;
@@ -118,7 +127,7 @@ $theme-dark: black;
 .arrow.up {
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
-        bottom: 3%;
+        bottom: 4%;
         border-color: $theme-primary;
 }
 
@@ -138,3 +147,25 @@ $theme-dark: black;
         padding: 0 0;
         vertical-align: top;
 }
+
+.nav>li>a:focus, .nav>li>a:hover {
+        color: inherit;
+        background-color: transparent;
+        padding-bottom: 4px;
+        border-bottom: 2px solid $theme-primary;
+}
+
+.navbar-toggle {
+        border-color: #ddd;
+        background-color: whitesmoke;
+}
+
+.icon-bar {
+        background-color: #888;
+}
+
+.img-girl {
+        max-height: 60vh;
+        min-height: 20vh;
+}
+
