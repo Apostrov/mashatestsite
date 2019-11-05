@@ -8,9 +8,11 @@
     <div class="container">
         <div >
             <p class="text-center h3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui 
-                id. Leo duis ut diam quam nulla porttitor massa id neque.
+                {% for lang in site.langs %}
+                {% if lang.lang == page.lang %}
+                    {{ lang.about_description}}
+                {% endif %}
+                {% endfor %}
             </p>
         </div>
     </div>

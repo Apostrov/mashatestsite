@@ -2,9 +2,11 @@
         <div id="news" class="row div-relative">
             <img src="img/news.jpg" class="img-responsive img-fill" style="opacity: 0.2;"/>
             <p class="text-center news-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui 
-                    id. Leo duis ut diam quam nulla porttitor massa id neque.
+                {% for lang in site.langs %}
+                {% if lang.lang == page.lang %}
+                    {{ lang.news_text}}
+                {% endif %}
+                {% endfor %}
             </p>
             <a href="https://www.youtube.com/"><div class="arrow inside"></div></a>
         </div>

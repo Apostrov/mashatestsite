@@ -16,23 +16,33 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="links" style="margin-top: 0.9%">
             <ul class="nav navbar-nav navbar-right">
+                {% assign pages=site.pages | where:"lang", page.lang %}
+                {% for lang in site.langs %}
+                {% if lang.lang == page.lang %}
+                    <li>
+                        <a class="page-scroll" href="#about">{{lang.about}}</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#games">{{lang.games}}</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#jobs">{{lang.jobs}}</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#news">{{lang.news}}</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">{{lang.contact}}</a>
+                    </li>
+                {% endif %}
+                {% endfor %}
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#games">Games</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#jobs">Jobs</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#news">News</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="">RU</a>
+                    {% if page.lang == 'en' %}
+                        <a class="page-scroll" href="/index_ru.html">RU</a>
+                    {% endif %}
+                    {% if page.lang == 'ru' %}
+                        <a class="page-scroll" href="/">EN</a>
+                    {% endif %}
                 </li>
             </ul>
         </div>

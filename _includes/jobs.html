@@ -1,23 +1,25 @@
 <section id="jobs" class="bg-dark">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="h2">Middle Java developer</h2>
-                <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="row">
+        {% for lang in site.langs %}
+        {% if lang.lang == page.lang %} 
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="h2">Senior C# developer</h2>
-                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua.</p>
+                    <h2 class="h2">{{lang.job1_head}}</h2>
+                    <p class="text-faded">{{lang.job1_body}}</p>
                 </div>
             </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a class="hv-button" href="#vacancies" target="_blank" rel="nofollow noopener">Look vacancies</a>
+            <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="h2">{{lang.job2_head}}</h2>
+                        <p class="text-faded">{{lang.job2_body}}</p>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a class="hv-button" href="#vacancies" target="_blank" rel="nofollow noopener">{{lang.job_button}}</a>
+                </div>
             </div>
-        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </section>
