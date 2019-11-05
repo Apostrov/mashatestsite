@@ -55,15 +55,15 @@ html, body {
 
 .inner-google-badge {
         position: absolute;
-        bottom: 1vw;
-        left: 50vw;
+        bottom: 1vmin;
+        right: 0.2vmin;
 }
 
 .inner-apple-badge {
         position: absolute;
-        width: 90%;
-        bottom: 2vw;
-        left: 50vw;
+        width: 85%;
+        bottom: 3vmin;
+        right: 5vmin;
 }
 
 .div-relative {
