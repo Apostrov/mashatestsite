@@ -48,8 +48,13 @@ html, body {
         overflow-x: hidden;
 }
 
+img {
+        max-width: 100%;
+        height: auto;
+}
+
 .nav-logo {
-        height: 10vmin;
+        height: 9vmin;
         min-height: 50px;
 }
 
@@ -61,8 +66,10 @@ html, body {
 
 .inner-apple-badge {
         position: absolute;
-        width: 85%;
-        bottom: 3vmin;
+        width: 89%;
+        max-width: 650px;
+        padding: 6%;
+        bottom: 1.2vmin;
         right: 5vmin;
 }
 
@@ -103,8 +110,8 @@ html, body {
 
 .arrow {
         box-sizing: border-box;
-        height: 5vw;
-        width: 5vw;
+        height: 2.5vw;
+        width: 2.5vw;
         border-style: solid;
         border-color: white;
         border-width: 0px 1px 1px 0px;
@@ -121,7 +128,7 @@ html, body {
 .arrow.inside {
         position: absolute;
         bottom: 10%;
-        left: 47vw;
+        left: 48.5vw;
 }
 
 .arrow.up {
@@ -129,7 +136,7 @@ html, body {
         -webkit-transform: rotate(-135deg);
         bottom: 4%;
         border-color: $theme-primary;
-        left: 46.9vw;
+        left: 48.5vw;
 }
 
 .news-text {
