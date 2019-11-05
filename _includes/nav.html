@@ -38,10 +38,10 @@
                 {% endfor %}
                 <li>
                     {% if page.lang == 'en' %}
-                        <a class="page-scroll" href="/index_ru.html">RU</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/index_ru.html">RU</a>
                     {% endif %}
                     {% if page.lang == 'ru' %}
-                        <a class="page-scroll" href="/">EN</a>
+                        <a class="page-scroll" href="{{site.baseurl}}/">EN</a>
                     {% endif %}
                 </li>
             </ul>
