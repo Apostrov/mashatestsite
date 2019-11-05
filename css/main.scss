@@ -49,21 +49,21 @@ html, body {
 }
 
 .nav-logo {
-        max-height: 14vmin;
+        height: 10vmin;
+        min-height: 50px;
 }
 
 .inner-google-badge {
         position: absolute;
-        width: 20%;
-        bottom: 0;
-        right: 20%;
+        bottom: 1vw;
+        left: 50vw;
 }
 
 .inner-apple-badge {
         position: absolute;
-        width: 17%;
-        bottom: 2%;
-        right: 2%;
+        width: 90%;
+        bottom: 2vw;
+        left: 50vw;
 }
 
 .div-relative {
@@ -121,7 +121,7 @@ html, body {
 .arrow.inside {
         position: absolute;
         bottom: 10%;
-        right: 48.5%;
+        left: 47vw;
 }
 
 .arrow.up {
@@ -129,13 +129,14 @@ html, body {
         -webkit-transform: rotate(-135deg);
         bottom: 4%;
         border-color: $theme-primary;
+        left: 46.9vw;
 }
 
 .news-text {
         position: absolute;
         bottom: 20%;
-        left: 25%;
-        right: 25%;
+        left: 15vw;
+        right: 15vw;
 }
 
 .contact-container {
