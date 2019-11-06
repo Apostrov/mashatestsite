@@ -173,11 +173,16 @@ img {
         vertical-align: top;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a {
         color: inherit;
         background-color: transparent;
         padding-bottom: 4px;
-        border-bottom: 2px solid $theme-primary;
+        border-bottom: 2px solid transparent;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+        background-color: transparent;
+        border-color: $theme-primary;
 }
 
 .navbar-toggle {
