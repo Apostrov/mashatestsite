@@ -197,3 +197,7 @@ img {
         font-weight: bold;
         margin-top: 1vh;
 }
+
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
