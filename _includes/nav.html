@@ -8,40 +8,40 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-left page-scroll" href="#page-top">
+            <a class="navbar-left" href="#page-top">
                 <img src="img/logoNav.png" class="img-responsive nav-logo">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse nav-links" id="links">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 2%">
                 {% assign pages=site.pages | where:"lang", page.lang %}
                 {% for lang in site.langs %}
                 {% if lang.lang == page.lang %}
                     <li>
-                        <a class="page-scroll" href="#about">{{lang.about}}</a>
+                        <a class="nav-link" href="#about">{{lang.about}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#games">{{lang.games}}</a>
+                        <a class="nav-link" href="#games">{{lang.games}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#jobs">{{lang.jobs}}</a>
+                        <a class="nav-link" href="#jobs">{{lang.jobs}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#news">{{lang.news}}</a>
+                        <a class="nav-link" href="#news">{{lang.news}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">{{lang.contact}}</a>
+                        <a class="nav-link" href="#contact">{{lang.contact}}</a>
                     </li>
                 {% endif %}
                 {% endfor %}
                 <li>
                     {% if page.lang == 'en' %}
-                        <a class="page-scroll" href="{{site.baseurl}}/index_ru.html">RU</a>
+                        <a class="nav-link" href="{{site.baseurl}}/index_ru.html">RU</a>
                     {% endif %}
                     {% if page.lang == 'ru' %}
-                        <a class="page-scroll" href="{{site.baseurl}}/">EN</a>
+                        <a class="nav-link" href="{{site.baseurl}}/">EN</a>
                     {% endif %}
                 </li>
             </ul>

@@ -46,6 +46,7 @@ $theme-dark: black;
 html, body {
         max-width: 100%;
         overflow-x: hidden;
+        scroll-behavior: smooth;
 }
 
 img {
@@ -61,7 +62,12 @@ img {
 }
 
 .nav-links {
-        margin-top: 0.5%;
+        margin-top: 1.5vmin;
+}
+
+.nav-link {
+        font-size: 2vmin;
+        margin-right: 15px
 }
 
 .inner-google-badge {
@@ -97,6 +103,7 @@ img {
         text-decoration: none;
         width: 40vmin;
         min-width: 200px;
+        font-size: 150%;
 }
 
 .hv-button:hover {
@@ -185,3 +192,7 @@ img {
         max-height: 60vh;
 }
 
+.address-text {
+        font-weight: bold;
+        margin-top: 1vh;
+}
