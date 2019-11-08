@@ -47,7 +47,6 @@ html, body {
         max-width: 100%;
         overflow-x: hidden;
         scroll-behavior: smooth;
-        .nav>li>a[href='#tab1']{ display: none }
 }
 
 img {
@@ -63,11 +62,11 @@ img {
 }
 
 .nav-links {
-        margin-top: 1.5vmin;
+        margin-top: 0.75%;
 }
 
 .nav-link {
-        font-size: 2vmin;
+        font-size: calc(10px + 1vmin);
         margin-right: 15px
 }
 
@@ -199,7 +198,6 @@ img {
 }
 
 .address-text {
-        font-weight: bold;
         margin-top: 1vh;
 }
 
