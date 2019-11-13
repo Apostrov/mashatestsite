@@ -159,7 +159,8 @@ section {
 .arrow.up {
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
-        bottom: 4%;
+        top: 45vmin;
+        bottom: 0;
         border-color: $theme-primary;
         left: 50vw;
 }
@@ -202,7 +203,13 @@ section {
 }
 
 .img-girl {
-        max-height: 60vh;
+        position: absolute;
+        top: 12vmin;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 45vmin;
 }
 
 .address-text {
