@@ -206,10 +206,10 @@ section {
 
 .img-girl {
         position: absolute;
-        top: 12vmin;
+        top: 20vmin;
         bottom: 0;
         width: auto;
-        height: 45vmin;
+        height: 35vmin;
 }
 
 .img-girl.left {
@@ -220,6 +220,21 @@ section {
 .img-girl.right {
         left: auto;
         right: -16px;
+}
+
+.img-build {
+        position: absolute;
+        width: 33%;
+        left: auto;
+        right: auto;
+}
+
+.img-build.left {
+        left: 15.5vw;
+}
+
+.img-build.right {
+        right: 13vw;
 }
 
 .address-text {

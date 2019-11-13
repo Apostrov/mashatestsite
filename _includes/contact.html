@@ -1,24 +1,18 @@
 <section id="contact" class="bg-dark footer">
     <div class="row contact-container div-relative">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-            <!-- pass -->
-        </div>
         {% for lang in site.langs %}
         {% if lang.lang == page.lang %}
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="img-build left">
                 <img src="img/bel.png" class="img-responsive">
                 <figcaption class="address-text text-center">{{lang.address1}}</figcaption>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="img-build right">
                 <img src="img/inno.png" class="img-responsive">
                 <figcaption class="address-text text-center">{{lang.address2}}</figcaption>
             </div>
         {% endif %}
         {% endfor %}
         
-        <div class="col-lg-2 col-md-2  col-sm-2 col-xs-2">
-            <!-- pass -->
-        </div>
         <img src="img/girlLeft.png" class="img-responsive img-girl left">
         <img src="img/girlRight.png" class="img-responsive img-girl right">
         <a href="#page-top"><div class="arrow inside up"></div></a>
