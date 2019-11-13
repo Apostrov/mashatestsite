@@ -154,6 +154,7 @@ section {
         position: absolute;
         bottom: 10%;
         left: 50vw;
+        right: auto;
 }
 
 .arrow.up {
@@ -163,6 +164,7 @@ section {
         bottom: 0;
         border-color: $theme-primary;
         left: 50vw;
+        right: auto;
 }
 
 .news-text {
